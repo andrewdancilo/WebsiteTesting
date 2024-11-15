@@ -16,9 +16,14 @@ export const config = {
     
     maxInstances: 5,
     
-    capabilities: [{
-        browserName: 'microsoftedge' // or "firefox", "microsoftedge", "safari"
-    }],
+    capabilities: [
+        {
+            browserName: 'firefox', // First browser configuration (Edge)
+        },
+        {
+            browserName: 'microsoftedge', // Second browser configuration (Firefox)
+        }
+    ],
 
     logLevel: 'info',
     bail: 0,
